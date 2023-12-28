@@ -247,6 +247,7 @@ input, textarea {
   background: skyblue;
   opacity: .2;
   cursor: not-allowed;
+  transition: 1s;
 }
 
 /* company */
