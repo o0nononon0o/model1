@@ -35,6 +35,10 @@
       btn.style.opacity = 1;
       btn.style.cursor = "pointer";
       return;
+    } else {
+      btn.disabled = true;
+      btn.style.opacity = .2;
+      btn.style.cursor = "not-allowed";
     }
   }
 
