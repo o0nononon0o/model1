@@ -22,20 +22,20 @@
     })
   });
 
-  // const form = document.querySelector('form');
-  // const btn = document.querySelector('.btn');
+  const form = document.querySelector('form');
+  const btn = document.querySelector('.btn');
 
-  // form.addEventListener('input', update);
-  // form.addEventListener('change', update);
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
 
-  // function update() {
-  //   const isRequired = form.checkValidity();
-  //   if (isRequired) {
-  //     btn.disabled = false;
-  //     btn.style.opacity = 1;
-  //     btn.style.cursor = "pointer";
-  //     return;
-  //   }
-  // }
+  function update() {
+    const isRequired = form.checkValidity();
+    if (isRequired) {
+      btn.disabled = false;
+      btn.style.opacity = 1;
+      btn.style.cursor = "pointer";
+      return;
+    }
+  }
 
 }

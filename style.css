@@ -244,13 +244,8 @@ input, textarea {
   border-radius: 16px;
   color: white;
   background: skyblue;
-  cursor: pointer;
+  opacity: .2;
 }
-
-.btn:hover{
-  opacity: .8;
-}
-
 
 /* company */
 
