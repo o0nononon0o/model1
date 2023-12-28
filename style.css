@@ -57,6 +57,14 @@ section{
   padding: 64px 8px;
   box-sizing: border-box;
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+section.fadein{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .wrapper img{
@@ -100,6 +108,10 @@ header a{
   border-radius: 16px;
   color: white;
   background: skyblue;
+}
+
+header a:hover{
+  opacity: .8;
 }
 
 /* hero */
@@ -201,17 +213,29 @@ table th, table td{
 }
 
 #inquiry .inner {
-  max-width: 480px;
-  text-align: center;
+  max-width: 800px;
   margin: 32px auto 0;
-  padding: 32px 0;
+  padding: 64px 0;
   display: block;
   background: white;
 }
 
-#inquiry button{
+label{
+  display: block;
+  margin-top: 24px;
+}
+
+input, textarea {
+  margin-top: 4px;
+  font-size: 16px;
+  width: 240px;
+  line-height: 1.8;
+}
+
+#inquiry .btn{
+  margin: 32px auto 0;
+  display: block;
   text-decoration: none;
-  cursor: pointer;
   width: 100px;
   height: 48px;
   line-height: 48px;
@@ -220,7 +244,13 @@ table th, table td{
   border-radius: 16px;
   color: white;
   background: skyblue;
+  cursor: pointer;
 }
+
+.btn:hover{
+  opacity: .8;
+}
+
 
 /* company */
 
