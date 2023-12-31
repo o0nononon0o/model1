@@ -16,7 +16,7 @@
 
   window.addEventListener('scroll', () => {
     secElements.forEach(secElement => {
-      if (secElement.getBoundingClientRect().top < window.innerHeight * 0.6) {
+      if (secElement.getBoundingClientRect().top < window.innerHeight * 0.7) {
         secElement.classList.add('fadein');
       }
     })
