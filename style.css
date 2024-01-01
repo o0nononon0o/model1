@@ -335,12 +335,12 @@ table th, table td{
 }
 
 #inquiry input[type=number] {
-  width: 48px;
+  width: 32px;
   line-height: 1.5;
 }
 
 #inquiry .btn{
-  margin: 32px auto 0;
+  margin: 16px auto 0;
   display: block;
   text-decoration: none;
   width: 100px;
@@ -354,6 +354,30 @@ table th, table td{
 }
 
 .btn:hover{
+  opacity: .8;
+}
+
+
+#inquiry a{
+  margin: 16px auto 0;
+  display: block;
+  text-decoration: none;
+  width: 240px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 32px;
+  text-align: center;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  background: skyblue;
+}
+
+#inquiry h4{
+  margin-top: 64px;
+}
+
+#inquiry a:hover{
   opacity: .8;
 }
 
