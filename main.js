@@ -22,24 +22,23 @@
     })
   });
 
-  const form = document.querySelector('form');
-  const btn = document.querySelector('.btn');
+  // const form = document.querySelector('#inquiry form');
+  // const btn = document.querySelector('#inquiry .btn');
 
-  form.addEventListener('input', update);
-  form.addEventListener('change', update);
+  // form.addEventListener('input', update);
 
-  function update() {
-    const isRequired = form.checkValidity();
-    if (isRequired) {
-      btn.disabled = false;
-      btn.style.opacity = 1;
-      btn.style.cursor = "pointer";
-      return;
-    } else {
-      btn.disabled = true;
-      btn.style.opacity = .2;
-      btn.style.cursor = "not-allowed";
-    }
-  }
+  // function update() {
+  //   const isRequired = form.checkValidity();
+  //   if (isRequired) {
+  //     btn.disabled = false;
+  //     btn.style.opacity = 1;
+  //     btn.style.cursor = "pointer";
+  //     return;
+  //   } else {
+  //     btn.disabled = true;
+  //     btn.style.opacity = .2;
+  //     btn.style.cursor = "not-allowed";
+  //   }
+  // }
 
 }

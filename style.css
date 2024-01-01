@@ -306,24 +306,37 @@ table th, table td{
   padding: 64px 16px;
 }
 
-#inquiry .inner {
+#inquiry .form {
   max-width: 800px;
   margin: 32px auto 0;
-  padding: 64px 0;
+  padding: 64px 16px;
   display: block;
   background: white;
 }
 
-label{
-  display: block;
-  margin-top: 24px;
+#inquiry table{
+  margin: 32px auto 0;
+  text-align: left;
+  max-width: 640px;
+  width: 100%;
 }
 
-input, textarea {
-  margin-top: 4px;
-  font-size: 16px;
-  width: 240px;
-  line-height: 1.8;
+#inquiry th, #inquiry td{
+  padding: 8px;
+}
+
+#inquiry .req{
+  color: red;
+}
+
+#inquiry input[type=text], input[type=email], #inquiry textarea{
+  width: 100%;
+  line-height: 1.5;
+}
+
+#inquiry input[type=number] {
+  width: 48px;
+  line-height: 1.5;
 }
 
 #inquiry .btn{
@@ -338,9 +351,10 @@ input, textarea {
   border-radius: 16px;
   color: white;
   background: skyblue;
-  opacity: .2;
-  cursor: not-allowed;
-  transition: 1s;
+}
+
+.btn:hover{
+  opacity: .8;
 }
 
 /* company */

@@ -322,23 +322,59 @@
   </div>
 
   <div id="inquiry">
-    <section class="inner">
-      <h3>お問い合わせ</h1>
-        <form method="post" name="form">
-          <div class="contact-form">
-            <label for="name">お名前</label>
-            <input type="text" id="name" name="name" placeholder="山田太郎" required />
-          </div>
-          <div class="contact-form">
-            <label for="email">メールアドレス</label>
-            <input type="text" id="email" name="email" placeholder="XXXX@example.com" required />
-          </div>
-          <div class="contact-form">
-            <label for="message">メッセージ</label>
-            <textarea id="message" name="message" placeholder="お問い合わせ内容" required /></textarea>
-          </div>
-          <input class="btn" type="submit" value="送信" disabled>
-        </form>
+    <section class="form">
+      <h3>お問い合わせ</h3>
+      <div class="sec__inner">
+        <div class="">
+          <form action="send_email.php" method="post">
+            <table>
+              <tr>
+                <th>お名前<span class="req">※</span></th>
+                <td>
+                  <input type="text" id="" name="" placeholder="" required />
+                </td>
+              </tr>
+              <tr>
+                <th>住所<span class="req">※</span></th>
+                <td>
+                  <div class="f_yc m_0">
+                    <input type="text" id="address" class="m_0 f_1" name="address" required></input>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>電話番号<span class="req">※</span></th>
+                <td>
+                  <input type="text" id="" class="" name="" placeholder=""  pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required />
+                </td>
+              </tr>
+              <tr>
+                <th>E-mail<span class="req">※</span></th>
+                <td><input type="email" id="email" name="email" required /></td>
+              </tr>
+              <tr>
+                <th>種類<span class="req">※</span></th>
+                <td>
+                  <label for=""><input type="checkbox" name="" id=""> ご相談・ご質問</label><br>
+                  <label for=""><input type="checkbox" name="" id=""> 見積もり依頼</label><br>
+                  <label for=""><input type="checkbox" name="" id=""> その他</label>
+                </td>
+              </tr>
+              <tr>
+                <th>エアコン台数</th>
+                <td>
+                  <label for="">天井エアコン </label><input type="number" name="" id=""> 台<br>
+                  <label for="">床置エアコン </label><input type="number" name="" id=""> 台
+              </tr>
+              <tr>
+                <th>内容<span class="req">※</span></th>
+                <td><textarea id="message" name="message" rows="10" cols="30" required></textarea></td>
+              </tr>
+            </table>
+            <input class="btn" type="submit" value="送信" />
+          </form>
+        </div>
+      </div>
     </section>
   </div>
 
