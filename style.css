@@ -62,13 +62,13 @@ section.fadein{
   transform: translateY(0);
 }
 
+.wrapper{
+  text-align: left;
+}
+
 .wrapper img{
   width: 100%;
   height: auto;
-}
-
-.wrapper{
-  text-align: left;
 }
 
 /* header */
