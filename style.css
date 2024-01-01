@@ -24,7 +24,7 @@ h2{
 h3{
   margin: 0;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: 1px;
   color: #005ab4;
 }
@@ -143,12 +143,15 @@ header a:hover{
   padding: 8px 8px;
 } */
 
-.hero{
+.hero-0{
   display: block;
   margin: 80px auto 0;
-  max-width: 1600px;
   width: 100%;
   height: auto;
+}
+
+.hero-4{
+  display: none;
 }
 
 /* catch */
@@ -181,7 +184,7 @@ header a:hover{
 
 /* main */
 #main{
-  background-image: url(背景-1.png);
+  background-image: url(img/背景-1.png);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -203,7 +206,7 @@ header a:hover{
 /* merit */
 #merit{
   background: rgb(61, 107, 175);
-  background-image: url(背景-3.png);
+  background-image: url(img/背景-3.png);
   background-repeat: no-repeat;
   background-position: top;
   color: white;
@@ -219,7 +222,7 @@ header a:hover{
 
 /* sub */
 #sub{
-  background-image: url(背景-2.png);
+  background-image: url(img/背景-2.png);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -231,7 +234,7 @@ header a:hover{
 /* processes */
 #processes{
   background: rgb(227, 240, 255);
-  background-image: url(背景-3.png);
+  background-image: url(img/背景-3.png);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -266,7 +269,7 @@ header a:hover{
 
 /* menu */
 #menu{
-  background-image: url(背景-1.png);
+  background-image: url(img/背景-1.png);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -296,7 +299,7 @@ table th, table td{
 /* inquiry */
 #inquiry{
   background: rgb(61, 107, 175);
-  background-image: url(背景-3.png);
+  background-image: url(img/背景-3.png);
   background-repeat: no-repeat;
   background-position: top;
   box-sizing: border-box;
@@ -404,10 +407,23 @@ footer{
 
   /* hero */
 
-  .hero div{
+  .hero-4{
+    display: block;
+    margin: 80px auto 0;
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-0{
+    display: none;
+  }
+  
+
+  /* .hero div{
     position: absolute;
     top: 15%;
     left: 8%;
     padding: 32px;
-  }
+  } */
 }
