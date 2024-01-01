@@ -111,7 +111,7 @@ header a:hover{
 }
 
 /* hero */
-.hero{
+/* .hero{
   position: relative;
   margin-top: 48px;
   width: 100%;
@@ -141,6 +141,14 @@ header a:hover{
   background: rgba(256, 256, 256, .8);
   box-sizing: border-box;
   padding: 8px 8px;
+} */
+
+.hero{
+  display: block;
+  margin: 80px auto 0;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
 }
 
 /* catch */
@@ -182,7 +190,12 @@ header a:hover{
   max-width: 800px;
 }
 
-#main img, #processes img{
+.main img{
+  width: 100%;
+  height: auto;
+}
+
+.main video{
   width: 100%;
   height: auto;
 }
@@ -230,7 +243,26 @@ header a:hover{
   box-sizing: border-box;
 }
 
+.processpic{
+  width: 100%;
+  height: auto;
+}
 
+.process .title{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.title img{
+  width: 25%;
+  height: auto;
+}
+
+.title h4{
+  font-size: 30px;
+}
 
 /* menu */
 #menu{
