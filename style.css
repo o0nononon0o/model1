@@ -237,31 +237,6 @@ header a:hover{
   font-size: 28px;
 }
 
-
-/* menu */
-#menu{
-  background-image: url(img/背景-1.png);
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.items{
-  display: flex;
-  gap: 16px;
-  align-items: start;
-  overflow-x: auto;
-  text-align: left;
-}
-
-.items::-webkit-scrollbar{
-  width: 10px;
-}
-
-.items::-webkit-scrollbar-thumb{
-  background: #eee;
-  border-radius: 8px;
-}
-
 /* inquiry */
 #inquiry{
   background: rgb(61, 107, 175);
