@@ -193,6 +193,10 @@ header a:hover{
   margin-top: 32px;
 }
 
+#catch .demerit-inner .wrapper-text{
+  padding: 16px;
+}
+
 /* main */
 #main{
   background-image: url(img/背景-1.png);
