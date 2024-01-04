@@ -19,26 +19,42 @@ h2{
   font-weight: bold;
   font-size: 28px;
   letter-spacing: .5px;
-  color: #005ab4;
+  color: #002079;
 }
 
 h3{
-  margin: 0;
+  margin: 16px 0 0;
   font-weight: bold;
   font-size: 28px;
   letter-spacing: .5px;
-  color: #005ab4;
+  color: #002079;
+}
+
+.under{
+  position: relative;
+  display: inline-block;
+}
+
+.under:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 16px;
+  background: rgb(255, 255, 144);
 }
 
 h4{
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   font-weight: bold;
   font-size: 20px;
-  color: #005ab4;
+  color: #002079;
 }
 
 p{
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   line-height: 1.8;
 }
 
@@ -46,29 +62,38 @@ img{
   vertical-align: bottom;
 }
 
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 section{
   max-width: 1280px;
   margin: 0 auto;
   padding: 64px 16px;
   box-sizing: border-box;
-  text-align: center;
   opacity: 0;
   transform: translateY(50px);
   transition: 1s;
 }
 
 section.fadein{
+  text-align: center;
   opacity: 1;
   transform: translateY(0);
 }
 
+
+.container{
+  margin-top: 32px;
+}
+
 .wrapper{
-  margin: 16px;
   text-align: left;
 }
 
 .wrapper img{
-  margin-top: 32px;
   width: 100%;
   height: auto;
 }
@@ -117,40 +142,55 @@ header a:hover{
 .hero-1{
   display: block;
   margin: 80px auto 0;
+  max-width: 1280px;
   width: 100%;
   height: auto;
 }
 
-.hero-2{
-  display: none;
+/* check */
+#check{
+  margin-top: 64px;
+  padding: 32px 16px;
+  text-align: center;
+  background-image: url(img/office.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+}
+
+#check h2{
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, .7);
+}
+
+#check li{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
 }
 
 /* catch */
 
 #catch{
-  background: rgb(227, 240, 255);
-  background-size: cover;
+  background: rgb(235, 249, 255);
 }
 
-#catch .container{
-  max-width: 800px;
-  margin: 0 auto;
+.catch{
+  max-width: 960px;
 }
 
-.under{
-  position: relative;
-  display: inline-block;
+#catch .demerit-inner{
+  margin-top: 32px;
 }
 
-.under:before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  z-index: -1;
-  width: 100%;
-  height: 16px;
-  background: rgb(255, 255, 144);
+#catch .demerit-inner .container{
+  background: white;
+}
+
+#catch .demerit-inner .container + .container {
+  margin-top: 32px;
 }
 
 /* main */
@@ -176,7 +216,7 @@ header a:hover{
 
 /* merit */
 #merit{
-  background: rgb(61, 107, 175);
+  background: rgb(74, 130, 163);
   background-image: url(img/背景-3.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -191,6 +231,10 @@ header a:hover{
   color: rgb(255, 255, 144);
 }
 
+#merit .wrapper{
+  margin-top: 32px;
+}
+
 /* sub */
 #sub{
   background-image: url(img/背景-2.png);
@@ -200,11 +244,12 @@ header a:hover{
 
 #sub .wrapper{
   text-align: center;
+  margin-top: 16px;
 }
 
 /* processes */
 #processes{
-  background: rgb(227, 240, 255);
+  background: rgb(235, 249, 255);
   background-image: url(img/背景-3.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -240,7 +285,7 @@ header a:hover{
 
 /* inquiry */
 #inquiry{
-  background: rgb(61, 107, 175);
+  background: rgb(74, 130, 163);
   background-image: url(img/背景-1.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -326,7 +371,7 @@ header a:hover{
 /* company */
 
 #company{
-  background: rgb(61, 107, 175);
+  background: rgb(74, 130, 163);
   color: white;
   padding: 64px 8px;
   text-align: center;
@@ -347,6 +392,8 @@ footer{
   text-align: center;
   padding: 64px;
 }
+
+
 
 @media (min-width: 600px){
   /* common */
@@ -384,18 +431,8 @@ footer{
     border-radius: 16px;
   }
 
-  /* hero */
 
-  .hero-2{
-    display: block;
-    margin: 80px auto 0;
-    max-width: 1280px;
-    width: 100%;
-    height: auto;
-  }
   
-  .hero-1{
-    display: none;
-  }
+
   
 }
