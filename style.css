@@ -58,11 +58,10 @@ section{
   margin: 0 auto;
   padding: 64px 16px;
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
 }
 
 .container{
-  margin-top: 32px;
   opacity: 0;
   transform: translateY(50px);
   transition: 2s;
@@ -71,10 +70,6 @@ section{
 .container.fadein{
   opacity: 1;
   transform: translateY(0);
-}
-
-.wrapper{
-  text-align: left;
 }
 
 .wrapper img{
@@ -136,8 +131,8 @@ header a:hover{
 
 /* check */
 #check{
-  margin-top: 48px;
-  padding: 32px 16px;
+  margin-top: 32px;
+  padding: 64px 16px;
   text-align: center;
   background-image: url(img/office.JPG);
   background-repeat: no-repeat;
@@ -166,6 +161,10 @@ header a:hover{
 
 .catch{
   max-width: 1120px;
+}
+
+.catch .container{
+  margin-top: 16px;
 }
 
 #catch .demerit-inner{
@@ -201,26 +200,42 @@ header a:hover{
   max-width: 1120px;
 }
 
-.main-pic{
+#main .main-inner{
   max-width: 800px;
+  margin: 0 auto;
+}
+
+#main .main-inner img{
   width: 100%;
   height: auto;
 }
 
 #main .review{
   margin-top: 48px;
+  text-align: center;
+}
+
+#main .review h4{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 32px;
+  border-bottom: 1px solid #194374;
+}
+
+#main li{
+  padding: 16px 32px;
+  box-sizing: border-box;
+  margin: 24px auto 0;
+  border: 1px solid black;
+  box-shadow: 8px 8px #ddd;
+  flex: 1;
+  text-align: left;
 }
 
 #main .title{
   display: flex;
   align-items: center;
   gap: 32px;
-  max-width: 600px;
-  padding: 16px 32px;
-  box-sizing: border-box;
-  margin: 16px auto 0;
-  border: 1px solid black;
-  box-shadow: 8px 8px #ddd;
 }
 
 #main .title h4{
@@ -228,10 +243,11 @@ header a:hover{
 }
 
 #main .title img{
-  width: 30%;
+  width: 20%;
 }
 
 #main .video-h4{
+  text-align: center;
   margin-top: 64px;
   color: white;
   background: #194374;
@@ -289,11 +305,7 @@ header a:hover{
   background: white;
   padding: 16px;
   box-sizing: border-box;
-}
-
-.processpic{
-  width: 100%;
-  height: auto;
+  flex: 1;
 }
 
 .process .title{
@@ -303,9 +315,13 @@ header a:hover{
   gap: 8px;
 }
 
-.process .title img{
-  width: 25%;
+.process .processpic{
+  width: 100%;
   height: auto;
+}
+
+.process .title img{
+  width: 48px;
 }
 
 .process .title h4{
@@ -320,16 +336,22 @@ header a:hover{
   box-sizing: border-box;
 }
 
+#execution ul{
+  margin-top: 32px;
+  text-align: center;
+}
+
 #execution .title{
+  text-align: left;
+  padding: 16px 32px;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 8px auto;
+  border: 1px solid black;
+  box-shadow: 8px 8px #ddd;
   display: flex;
   align-items: center;
   gap: 32px;
-  max-width: 600px;
-  padding: 16px 32px;
-  box-sizing: border-box;
-  margin: 32px auto 0;
-  border: 1px solid black;
-  box-shadow: 8px 8px #ddd;
 }
 
 #execution .title h4{
@@ -347,6 +369,7 @@ header a:hover{
 }
 
 #inquiry .form {
+  text-align: center;
   max-width: 800px;
   margin: 32px auto 0;
   padding: 64px 16px;
@@ -450,7 +473,7 @@ footer a.fade{
   }
 
   h3{
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.8;
     letter-spacing: 1px;
   }
@@ -494,9 +517,15 @@ footer a.fade{
 
   #catch .demerit-inner img{
     width: 100%;
-    height: 400px;
+    height: 320px;
     object-fit: cover;
   }
 
+  /* footer */
+  footer a{
+    position: fixed;
+    right: 80px;
+    bottom: 32px;
+  }
   
 }
