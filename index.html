@@ -17,11 +17,12 @@
   </header>
 
   <img src="img/hero1.png" class="hero-1">
+  <img src="img/hero2.png" class="hero-2">
 
   <div id="check">
     <h2>業務用エアコンの掃除<br>困っていませんか？</h2>
     <ul>
-      <li><img src="img/check.png" width="36"> エアコンがかび臭い</li>
+      <li><img src="img/check.png" width="36"> エアコンがカビ臭い</li>
       <li><img src="img/check.png" width="36"> エアコンの洗浄をしていない</li>
       <li><img src="img/check.png" width="36"> エアコンの効きが悪い</li>
       <li><img src="img/check.png" width="36"> エアコンの電気代が気になる</li>
@@ -30,7 +31,7 @@
  
   <div id="catch">
     <section class="catch">
-      <h3 class="under">分解洗浄の重要性</h3>
+      <h3>分解洗浄の重要性</h3>
       <div class="container">
         <div class="wrapper">
           <img src="img/demerit-1.png">
@@ -43,7 +44,7 @@
         </div>        
       </div>
       <div class="demerit-inner">
-        <h3 class="under">洗浄を放置すると...</h3>
+        <h3>洗浄を放置すると...</h3>
         <div class="container">
           <div class="wrapper">
             <img src="img/demerit-2.jpg">
@@ -73,7 +74,33 @@
   <div id="main">
     <section class="main">
       <h3>日本初の<br>エアコン掃除ロボ</h3>
-      <img src="img/main.jpg">
+      <img src="img/main.jpg" class="main-pic">
+
+      <div class="review">
+        <h3>お客様の声</h3>
+        <ul class="container">
+          <li>
+            <div class="title">
+              <img src="img/review1.png">
+              <div class="wrapper">
+                <h4>口コミ１</h4>
+                <p>お問い合わせフォームから送信</p>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <div class="title">
+              <img src="img/review2.png">
+              <div class="wrapper">
+                <h4>お見積り</h4>
+                <p>お問い合わせフォームから送信</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <h4 class="video-h4">紹介動画</h4>
       <video src="mp4/cleanlobo.mp4#t=0.1" controls></video>
     </section>
   </div>
@@ -140,7 +167,7 @@
         <div class="process">
           <div class="title">
             <img src="img/step3.png" width="96">
-            <h4>作業開始</h4>
+            <h4>洗浄開始</h4>
           </div>
           <img class="processpic" src="img/process-3.jpg">
           <p>洗浄を開始し、作業内容をリアルタイムで確認できます。</p>
@@ -149,63 +176,47 @@
     </section>
   </div>
 
+  <div id="execution">
+    <section>
+      <h3>ご契約から施行まで</h3>
+      <ul>
+        <li>
+          <div class="title">
+            <img src="img/1.png">
+            <div class="wrapper">
+              <h4>ご予約</h4>
+              <p>お問い合わせフォームから送信</p>
+            </div>
+          </div>  
+        </li>
+        <li>
+          <div class="title">
+            <img src="img/2.png">
+            <div class="wrapper">
+              <h4>お見積り</h4>
+              <p>お問い合わせフォームから送信</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="title">
+            <img src="img/3.png">
+            <div class="wrapper">
+              <h4>作業開始</h4>
+              <p>お問い合わせフォームから送信</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
   <div id="inquiry">
     <section class="form">
       <h3>お問い合わせ</h3>
-      <div class="sec__inner">
-        <div class="">
-          <form action="send_email.php" method="post">
-            <table>
-              <tr>
-                <th>お名前<span class="req">※</span></th>
-                <td>
-                  <input type="text" id="" name="" placeholder="" required />
-                </td>
-              </tr>
-              <tr>
-                <th>住所<span class="req">※</span></th>
-                <td>
-                  <div class="f_yc m_0">
-                    <input type="text" id="address" class="m_0 f_1" name="address" required></input>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th>電話番号<span class="req">※</span></th>
-                <td>
-                  <input type="text" id="" class="" name="" placeholder="" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"
-                    required />
-                </td>
-              </tr>
-              <tr>
-                <th>E-mail<span class="req">※</span></th>
-                <td><input type="email" id="email" name="email" required /></td>
-              </tr>
-              <tr>
-                <th>種類<span class="req">※</span></th>
-                <td>
-                  <label for=""><input type="checkbox" name="" id=""> ご相談・ご質問</label><br>
-                  <label for=""><input type="checkbox" name="" id=""> 見積もり依頼</label><br>
-                  <label for=""><input type="checkbox" name="" id=""> その他</label>
-                </td>
-              </tr>
-              <tr>
-                <th>エアコン台数</th>
-                <td>
-                  <label for="">天井： </label><input type="number" name="" id=""> 台<br>
-                  <label for="">床置： </label><input type="number" name="" id=""> 台
-              </tr>
-              <tr>
-                <th>内容<span class="req">※</span></th>
-                <td><textarea id="message" name="message" rows="10" cols="30" required></textarea></td>
-              </tr>
-            </table>
-            <input class="btn" type="submit" value="送信" />
-          </form>
-        </div>
-      </div>
+      <a href="" class="form-btn">お問い合わせはこちら</a>
       <h4>お電話によるお問い合わせ</h4>
-      <a href="tel:052-990-3250">052-990-3250</a>
+      <a href="tel:052-990-3250" class="tel-btn">052-990-3250</a>
       <p>受付時間 9:30～18:30(土日祝日除く)</p>
     </section>
   </div>
@@ -263,6 +274,7 @@
   </div>
 
   <footer>
+    <a href="#">▲Top</a>
     <p>CLEANROBO</p>
     <small>Copyright cleaNRoboE INC. All Rights Reserved.</small>
   </footer>
